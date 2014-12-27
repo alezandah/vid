@@ -1,0 +1,14 @@
+<%= image_tag @cinema.video.url(:medium) %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cinema.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cinema.description %>
+</p>
+
+<%= link_to 'Edit', edit_cinema_path(@cinema) %> |
+<%= link_to 'Back', cinemas_path %>
